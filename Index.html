@@ -4,39 +4,60 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale-1.0">
         <title>Portal Corporativo "Mueblesig Honduras"</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
     </head> 
-    <body>
-        <header>
-            <img src="imagenes/logo" alt="Logo de marca" width="200" height="800">
-            <h1> Mueblesig Honduras  </h1>
+    <body class="bg-stone-50 text-stone-800 font-sans leading-relaxed">
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="flex items-center gap-4">
+                <img src="img/logo.jpg" alt="Mueblesig Honduras" class="w-32 h-32 md:w-48 md:h-48 object-cover rounded-xl shadow-md">
+            <h1>Mueblesig Honduras</h1>
             <p>Los mejores muebles para tu hogar</p>
-
+            </div>
+            </div>
 
         <div>  
             <nav>
-            <ul>    
-                <li><a href="Index.html">   inicio</a></li>
-                <li><a href="catalogo.html"> catalogo</a></li>
-                <li><a href="lotes_especiales.html">Lotes</a></li>
-                <li><a href="contacto">contacto</a></li>
+            <ul class="flex flex-wrap items-center gap-4 text-sm font-medium">    
+                <li><a href="Index.html" class="hover:text-amber-700 transition">   inicio</a></li>
+                <li><a href="catalogo.html" class="hover:text-amber-700 transition"> catalogo</a></li>
+                <li><a href="lotes_especiales.html" class="hover:text-amber-700 transition">Lotes</a></li>
+                  <li><a href="licitaciones.html" class="hover:text-amber-700 transition">Licitaciones</a></li>
+                <li><a href="contacto.html" class="hover:text-amber-700 transition">contacto</a></li>
             </ul>
             </nav>
         </div>
     </header>
-    <main>
-        <div>      
-                <li><strong>Telefono1</strong>8899-00077</li>
-                <li><strong>Telefono2</strong>5544-1122</li>
-                <li><strong>Horario</strong>Lun-vie 8am-5pm</li>
+    <main class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-stone-200">  
+            <p class="text-lg font-bold text-stone-900 mb-4 border-b pb-2">Contactanos:</p> 
+                <li><strong>Telefono1:</strong> 8899-00077</li>
+                <li><strong>Telefono2:</strong> 5544-1122</li>
+                <li><strong>Horario:</strong> Lun-vie 8am-5pm</li>
         
         </div>
-        </main>
+
+        <aside class="bg-amber-50 p-6 rounded-xl shadow-sm border border-amber-200">
+            <h2 class="text-xl font-bold text-amber-900 mb-3">Quienes somos?</h2>
+            <p class="text-amber-950 text-sm md:text-base leading-relaxed"> Trabajamos con caoba, cedro, pino ocarpa y nogal. Cada pieza se diseña, corta, 
+                <br>arma y barniza en nuestro taller de Siguatepeque, con control de calidad y <br>
+                garantía forestal de 5 años.</p>
+        </aside>
+    </main>
+
         </header>
 
-        <footer>
-            <h2>Mueblesig Honduras</h2>
-            <p>km 114 Carretera ca-5, siguatepeque -tel:8899-00077</p>
-            <p>copy;todos los derechos reservados</p>
+        <footer class="bg-stone-900 text-stone-300 py-8 mt-12">
+            <h2 class="text-lg font-bold text-white" >Mueblesig Honduras</h2>
+            <p class="text-sm text-stone-400">km 114 Carretera ca-5, siguatepeque -tel:8899-00077</p>
+            <p class="text-xs text-stone-500 mt-1">&copy; todos los derechos reservados</p>
+
+         <div>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.facebook.com" target="_blank">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank">Instagram</a>
+     </div>
         </footer>
     
     </body>
