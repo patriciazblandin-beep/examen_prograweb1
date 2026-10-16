@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">   
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale-1.0">
+        <title>Portal Corporativo "Mueblesig Honduras"</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    </head> 
+<body class="bg-stone-50 text-stone-800 font-sans leading-relaxed">
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                     <img src="img/logo.jpg" alt="Mueblesig Honduras"  class="w-28 h-28 md:w-34 md:h-34 object-contain rounded-lg shadow-sm">
+                    <div>
+                    <h1 class="text-2xl font-bold text-stone-900">Mueblesig Honduras</h1>
+                    <p class="text-sm text-stone-600">Los mejores muebles para tu hogar</p>
+                    </div> 
+                </div>
+                <nav>
+                   <ul class="flex flex-wrap items-center gap-3 text-sm font-medium">    
+                      <li><a href="Index.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">   inicio</a></li>
+                      <li><a href="catalogo.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition"> catalogo</a></li>
+                      <li><a href="lotes_especiales.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">Lotes</a></li>
+                      <li><a href="licitaciones.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">Licitaciones</a></li>
+                      <li><a href="contacto.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+     <main class="max-w-7xl mx-auto px-4 py-8 space-y-12">
+    <section class="space-y-6">
+        <div class="text-center md:text-left">
+    <h2 class="text-2xl md:text-3xl font-bold text-stone-900">Lotes y Descuentos Especiales</h2>
+    <p class="text-stone-600 mt-1">Aproveche nuestros precios de liquidación en lotes de mobiliario institucional.</p>
+     </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <article id="lote-01" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 p-6 flex flex-col justify-between hover:shadow-lg transition">
+            <span class="inline-block bg-red-100 text-red-700 text-xs font-bold px-2.5 py-1 rounded uppercase mb-3">OFERTA</span>
+            <figure class="mb-4 text-center">
+                <img src="img/m1.jpg" alt="Lote de Escritorio Ejecutivo" class="w-full h-48 object-cover rounded-lg mb-2">
+                <figcaption class="text-stone-700 font-semibold text-base">Lote de Escritorio Ejecutivo en Nogal (x5)</figcaption>
+            </figure>
+            <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mb-2">Categoría: Línea Ejecutiva</p>
+            <p class="text-sm text-stone-500">
+                <strong>Precio Especial: L. 20,000</strong><br>
+                Precio Regular: <del class="text-red-500">L. 30,500</del>
+            </p>
+             <p class="text-xs text-stone-600 bg-amber-50/50 p-2.5 rounded border border-amber-100"><strong>Detalles técnicos:</strong> Tipo de madera: Nogal | Dimensiones: 180 x 90 x 75 cm | Acabado: Barniz brillante | Garantía: 3 años</p>
+        </article>
+
+        <article id="lote-02" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 p-6 flex flex-col justify-between hover:shadow-lg transition">
+            <span class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-2.5 py-1 rounded uppercase mb-3">DESCUENTO POR LOTE</span>
+            <figure class="mb-4 text-center">
+                <img src="img/p1.jpg" alt="Lote de Pupitres Universitarios" class="w-full h-48 object-cover rounded-lg mb-2">
+                <figcaption class="text-stone-700 font-semibold text-base">Pupitre Universitario en Caoba (x15)</figcaption>
+            </figure>
+            <p class="text-xs text-stone-500 font-medium uppercase tracking-wider mb-2">Categoría: Aulas Universitarias</p>
+            <p class="text-sm text-stone-500">
+                <strong>Precio Especial: L. 10,500</strong><br>
+                Precio Regular: <del class="text-red-500">L. 14,500</del>
+            </p>
+            <p class="text-xs text-stone-600 bg-amber-50/50 p-2.5 rounded border border-amber-100"><strong>Detalles técnicos:</strong> Tipo de madera: Caoba | Dimensiones: 180 x 45 x 100 cm | Acabado: Barniz  | Garantía: 5 años</p>
+        </article>
+
+    </div>
+
+<section id="Cotizaciones" class="bg-white rounded-2xl shadow-md border border-stone-200 p-6 md:p-8 max-w-3xl mx-auto">
+        <div class="mb-6 border-b pb-4">
+            <h2 class="text-xl md:text-2xl font-bold text-stone-900">Calculadora de Cotizaciones</h2>
+            <span> Descuento comerical del 8% automatico en ordenes de 5 o mas unidades </span>
+        </div>
+
+        <div>
+            <form action="#", method="post", enctype="multipart/form-data" class="space-y-5">
+                <fieldset class="space-y-4 border-0 p-0 m-0">
+                    <legend class="sr-only">Datos de Cotizacion</legend>
+                    
+                    <div class="space-y-1">
+                    <label> Ingrese cantidad de unidades a comprar</label>
+                     <input type="number" name="unidades" id="unidades">
+                    </div>
+
+                    <div class="space-y-1">
+                    <label>Escoja el tipo de mueble</label>
+                    <select id="opcion_equipo" name="opcion_equipo">
+                        <option value="" disabled selected>Seleccione el tipo de mueble</option>
+                        <option value="24500">Sofa largo de Caoba - Lps. 24,500</option>
+                        <option value="24500">Pupitre Universitario en Caoba - Lps. 24,500</option>
+                        <option value="14000">Juego de mesa y sillas de comedor - Lps. 14,000</option>
+                        <option value="7000">Mesa decorativa para sala - Lps. 7,000</option>
+                        <option value="10000">Mesa larga de Directorio - Lps. 10,000</option>
+                        <option value="2500">Juego de mesa y sillas - Lps. 2,500</option>
+                        <option value="4500">Pupitre Universitario en Pino Oocarpa - Lps. 4,500</option>
+                        <option value="24000">Mueble largo para sala - Lps. 24,000</option>
+                        <option value="13500">Mesa Directorio en Cedro - Lps. 13,500</option>
+                        <option value="30000">Mesa Directorio en Nogal - Lps. 30,000</option>
+                        <option value="900">Mesa decorativa - Lps. 9,000</option>
+                    </select>
+                    </div>
+                    
+            <div class="space-y-1">
+            <label for="destino">Destino y Flete sobre la CA-5:</label>
+            <select id="destino" name="destino" required>
+                <option value="" disabled selected>Seleccione el destino</option>
+                <option value="300">Comayagua - Flete: L. 300</option>
+                <option value="1000">Tegucigalpa o SPS - Flete: L. 1,000</option>
+                <option value="3500">Islas de la Bahía - Flete: L. 3,500</option>
+            </select>
+        </div>
+                 <aside class="bg-stone-100 p-3 rounded-lg border border-stone-200">
+            <p class="text-xs text-stone-600 font-medium"><strong>* Descuento institucional del 12% a partir de 10 piezas.</strong></p>
+        </aside>
+
+        <div>
+            <button type="button" class="w-full bg-amber-700 hover:bg-amber-800 text-white font-semibold py-2.5 px-4 rounded-lg shadow transition duration-200">Calcular Presupuesto</button>
+        </div>
+
+        <div class="bg-emerald-50 border border-emerald-200 p-4 rounded-lg text-center">
+            <p class="text-xs text-emerald-800 uppercase font-semibold tracking-wider">Panel de Resultado:</p>
+            <output class="text-lg font-bold text-emerald-900 mt-1 block font-mono">El costo estimado de su pedido es L. 20,000</output>
+        </div>
+                </fieldset>
+            </form>
+        </div>
+
+    </section>
+
+</main>
+   <footer class="bg-stone-900 text-stone-300 py-8 mt-12">
+            <h2 class="text-lg font-bold text-white" >Mueblesig Honduras</h2>
+            <p class="text-sm text-stone-400">km 114 Carretera ca-5, siguatepeque -tel:8899-00077</p>
+            <p class="text-xs text-stone-500 mt-1">&copy; todos los derechos reservados</p>
+
+         <div>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.facebook.com" target="_blank" class="text-stone-400 hover:text-white transition">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank" class="text-stone-400 hover:text-white transition">Instagram</a>
+     </div>
+        </footer>
+    
+    </body>
+
+
+</html>

@@ -4,72 +4,227 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial scale-1.0">
         <title>Portal Corporativo "Mueblesig Honduras"</title>
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     </head> 
-<body>
-        <header>
-              <div>   
-            <ul>    
-                <li><a href="Index.html">   inicio</a></li>
-                <li><a href="catalogo.html"> catalogo</a></li>
-                <li><a href="lotes_especiales.html">Lotes</a></li>
-                <li><a href="contacto">contacto</a></li>
-            </ul>
-        </div>
+<body class="bg-stone-50 text-stone-800 font-sans leading-relaxed">
+        <header class="bg-white shadow-md sticky top-0 z-50">
+            <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                     <img src="img/logo.jpg" alt="Mueblesig Honduras"  class="w-24 h-24 md:w-32 md:h-32 object-contain rounded-lg shadow-sm">
+                    <div>
+                    <h1 class="text-2xl font-bold text-stone-900">Mueblesig Honduras</h1>
+                    <p class="text-sm text-stone-600">Los mejores muebles para tu hogar</p>
+                    </div> 
+                </div>
+                <nav>
+                   <ul class="flex flex-wrap items-center gap-3 text-sm font-medium">    
+                      <li><a href="Index.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">   inicio</a></li>
+                      <li><a href="catalogo.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition"> catalogo</a></li>
+                      <li><a href="lotes_especiales.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">Lotes</a></li>
+                      <li><a href="licitaciones.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">Licitaciones</a></li>
+                      <li><a href="contacto.html" class="px-3 py-2 rounded-md hover:bg-stone-100 hover:text-amber-800 transition">contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
-        <main>
-            <section>
-            <imag src="imagenes/mueble1.jpg" alt="Muble de madera" width="200" height="400"></imag>
-            <h2> Mueblesig Honduras  </h2>
-            <p>Los mejores muebles para tu hogar</p>
-            </section>
-             <section>
-            <imag src="imagenes/mueble1.jpg" alt="Muble de madera" width="200" height="400"></imag>
-            <h2> Mueblesig Honduras  </h2>
-            <p>Los mejores muebles para tu hogar</p>
-            </section>
-             <section>
-            <imag src="imagenes/Mueble2.jpg" alt="Mueble de caoba" width="200" height="400">
-            <h2> Mueblesig Honduras  </h2>
-            <p>Los mejores muebles para tu hogar</p>
-             </section>
+    <main class="max-w-7xl mx-auto px-4 py-8 space-y-12">
+    
+    <section>
+    <h2 class="text-2xl font-bold text-stone-900 mb-6 border-b pb-2">Catálogo de Nuestros Productos</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-             <table>
+        <article id="prod-01" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+                <figure class="mb-3 text-center">
+                <img src="img/mueble1.jpg" alt="Sillon largo de caoba" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Sofa largo de Caoba</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 24,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Caoba | Dimensiones: 180 x 90 x 75 cm | Acabado: Barniz brillante | Garantía: 3 años</p>
+            </div>
+        </article>
+
+
+        <article id="prod-02" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition" >
+           <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Aulas Universitarias</span>
+            <figure class="mb-3 text-center">
+                <img src="img/p1.jpg" alt="Pupitre Universitario" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Pupitre Universitario en Caoba</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 24,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Caoba | Dimensiones: 180 x 45 x 100 cm | Acabado: Barniz  | Garantía: 5 años</p>
+        </div>
+        </article>
+
+        <article id="prod-03">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+            <figure class="mb-3 text-center">
+                <img src="img/mueble3.jpg" alt="mesa de comedor" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Juego de mesa y sillas de comedor</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 14,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Pino Oocarpa | Dimensiones: 280 x 100 x 85 cm | Acabado: Barniz brillante | Garantía: 2 años</p>
+        </div>
+        </article> 
+
+        <article id="prod-04" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+            <figure class="mb-3 text-center">
+                <img src="img/mueble4.jpg" alt="mesa de start" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Mesa decorativa para sala</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 7,000</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Cedro | Dimensiones: 180 x 90 x 75 cm | Acabado: Barniz brillante | Garantía: 4 años</p>
+        </div>
+        </article> 
+
+        <article id="prod-05" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Línea Ejecutiva</span>
+            <figure class="mb-3 text-center">
+                <img src="img/m2.jpg" alt="Mesa Directorio" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Mesa larga de Directorio</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 10,000</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Nogal | Dimensiones: 250 x 100 x 75 cm | Acabado: Barniz brillante | Garantía: 1 año</p>
+        </div>
+        </article>  
+
+
+        <article id="prod-06" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+            <figure class="mb-3 text-center">
+                <img src="img/mueble6.jpg" alt="mesa y sillas" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Juego de mesa y sillas</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 2,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Caoba | Dimensiones: 150 x 70 x 95 cm | Acabado: Barniz | Garantía: 5 años</p>
+        </div>
+        </article>
+    
+        <article id="prod-07" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Aulas Universitarias</span>
+            <figure class="mb-3 text-center">
+                <img src="img/p2.jpg" alt="Pupitre Universitario" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Pupitre Universitario en Pino Oocarpa</figcaption>
+            </figure> 
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 4,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Pino Oocarpa | Dimensiones: 160 x 70 x 75 cm | Acabado: Barniz brillante | Garantía: 2 años</p>
+        </div>
+        </article>
+
+        <article id="prod-08" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">   
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+            <figure class="mb-3 text-center">
+                <img src="img/p2.jpg" alt="Pupitre Universitario" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Pupitre Universitario en Pino Oocarpa</figcaption>
+            </figure>
+                <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 4,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Pino Oocarpa | Dimensiones: 160 x 70 x 75 cm | Acabado: Barniz brillante | Garantía: 2 años</p>
+            </div>
+        </article>
+    
+        <article id="prod-08" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+            <figure class="mb-3 text-center">
+                <img src="img/sala.jpg" alt="mueble" class=" w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">mueble largo para sala</figcaption>
+            </figure>   
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 24,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Cedro | Dimensiones: 180 x 90 x 75 cm | Acabado: Barniz brillante | Garantía: 2 años</p>
+        </div>
+        </article>
+    
+        <article id="prod-09" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Línea Ejecutiva</span>
+            <figure class="mb-3 text-center">
+                <img src="img/p4.jpg" alt="Mesa Directorio" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Mesa Directorio en Cedro</figcaption>
+            </figure>
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 13,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Cedro | Dimensiones: 200 x 100 x 85 cm | Acabado: Barniz brillante | Garantía: 3 años</p>
+       </div>
+        </article>
+    
+        
+        <article id="prod-10" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Línea Ejecutiva</span>
+            <figure class="mb-3 text-center">
+                <img src="img/m1.jpg" alt="Mesa directorio" class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">Mesa Directorio en Nogal</figcaption>
+            </figure>
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 30,500</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Nogal | Dimensiones: 180 x 90 x 75 cm | Acabado: Barniz brillante | Garantía: 3 años</p>
+        </figure>
+        </article>
+   
+            <article id="prod-11" class="bg-white rounded-xl shadow-md overflow-hidden border border-stone-200 flex flex-col justify-between hover:shadow-lg transition">
+            <div class="p-4">
+            <span class="inline-block bg-amber-100 text-amber-800 text-xs font-semibold px-2.5 py-0.5 rounded uppercase mb-2">Hoteleria</span>
+            <figure class="mb-3 text-center">
+                <img src="img/mesa1.jpg" alt="mesa " class="w-full h-48 object-cover rounded-md mb-2">
+                <figcaption class="text-stone-700 font-medium">mesa decorativa</figcaption>
+            </figure>
+            <p class="text-xl font-bold text-emerald-700 mb-2"><strong>L. 900</strong></p>
+            <p><strong>Detalles técnicos:</strong> Tipo de madera: Caoba | Dimensiones: 80 x 60 x 55 cm | Acabado: Barniz brillante | Garantía: 2 años</p>
+           </figure>
+         </div>
+        </article>
+        
+        </div>
+        </section>
+    
+ <div class="overflow-x-auto">
+       <table class="w-full text-left border-collapse min-w-[600px]">
                 <thead>
-                    <tr>    
-                        <th>Codigo</th>
-                        <th>Linea</th>
-                        <th>Especie</th>
-                        <th>humedad</th>
-                        <th>Resistencia Mecanica</th>
+                    <tr class="bg-stone-800 text-white text-center">
+                        <th colspan="5" class="py-3 px-4 font-semibold text-lg">Catálogo de Productos</th>
+                    </tr>
+                    <tr class="bg-stone-100 text-stone-700 uppercase text-xs font-semibold border-b border-stone-200">    
+                        <td scope="col" class="py-3 px-4"><strong>Codigo</strong></td>
+                        <td scope="col" class="py-3 px-4"><strong>Linea</strong></td>
+                        <td scope="col" class="py-3 px-4"><strong>Especie</strong></td>
+                        <td scope="col" class="py-3 px-4"><strong>humedad</strong></td>
+                        <td scope="col" class="py-3 px-4"><strong>Resistencia Mecanica</strong></td>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>    
-                        <td>01</td>
-                        <td>Cocina</td>
-                        <td>cedro</td>
-                        <td>30%</td>
-                        <td>2</td>
+                <tbody class="divide-y divide-stone-200 text-sm">
+                    <tr class="hover:bg-stone-50 transition">    
+                        <td class="py-3 px-4 font-medium">01</td>
+                        <td class="py-3 px-4">Cocina</td>
+                        <td class="py-3 px-4">cedro</td>
+                        <td class="py-3 px-4">30%</td>
+                        <td class="py-3 px-4">2</td>
                     </tr>
-                    <tr>    
-                        <td>02</td>
-                        <td>Cocina</td>
-                        <td>cedro</td>
-                        <td>30%</td>
-                        <td>2</td>
+                    <tr class="hover:bg-stone-50 transition">    
+                        <td class="py-3 px-4 font-medium">02</td>
+                        <td class="py-3 px-4">Cocina</td>
+                        <td class="py-3 px-4">cedro</td>
+                        <td class="py-3 px-4">30%</td>
+                        <td class="py-3 px-4">2</td>
                     </tr>
-                    <tr>    
-                        <td>04</td>
-                        <td>Cocina</td>
-                        <td>cedro</td>
-                        <td>30%</td>
-                        <td>2</td>
+                    <tr class="hover:bg-stone-50 transition">    
+                        <td class="py-3 px-4 font-medium">04</td>
+                        <td class="py-3 px-4">Cocina</td>
+                        <td class="py-3 px-4">cedro</td>
+                        <td class="py-3 px-4">30%</td>
+                        <td class="py-3 px-4">2</td>
                     </tr>
-                    <tr>    
-                        <td>03</td>
-                        <td>Cocina</td>
-                        <td>cedro</td>
-                        <td>30%</td>
+                    <tr class="hover:bg-stone-50 transition">    
+                        <td class="py-3 px-4 font-medium">03</td>
+                        <td class="py-3 px-4">Cocina</td>
+                        <td class="py-3 px-4">cedro</td>
+                        <td class="py-3 px-4">30%</td>
                         <td>2</td>
                     </tr>
                     
@@ -77,8 +232,20 @@
                 </tbody>
 
 
-             </table>
-                </main>
-            </body>
+    </table>
+</div>
+</main>
+            
+<footer>
+     <h2>Mueblesig Honduras</h2>
+            <p>km 114 Carretera ca-5, siguatepeque -tel:8899-00077</p>
+            <p>&copy; todos los derechos reservados</p>
+            <div>
+        <p>Síguenos en nuestras redes sociales:</p>
+        <a href="https://www.facebook.com" target="_blank" class="text-stone-400 hover:text-white transition">Facebook</a>
+        <a href="https://www.instagram.com" target="_blank" class="text-stone-400 hover:text-white transition">Instagram</a>
+     </div>
+</footer>
+</body>
 
 </html>            
